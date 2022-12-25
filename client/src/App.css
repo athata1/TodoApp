@@ -1,5 +1,5 @@
 #content {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   place-items: center;
   background-color: #9DCAEB;
@@ -41,6 +41,10 @@
   vertical-align: middle;
 }
 
+.todo-item input:checked {
+  background-color: blue;
+}
+
 .todo-item span {
   vertical-align: middle;
 }
@@ -72,6 +76,8 @@ input:focus {
 }
 
 .todo {
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 400px;
   min-height: 100px;
   background-color: white;
